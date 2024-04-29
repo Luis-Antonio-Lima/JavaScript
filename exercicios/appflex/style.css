@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.Container {
+    text-align: center;
+}
+
+.Container img {
+    max-width: 100%;
+}
+
+.Container h1 {
+    color: #ee394e;
+}
+
+.Caixa {
+    width: 75px;
+    border: 1px solid #ee394e;
+    padding: 5px;
+}
