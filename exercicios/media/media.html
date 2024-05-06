@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <h1>Calculadora de média</h1>
+        <form name="frmFlex">
+            <input class="Caixa" type="number" name="txt1semestre" size="8" placeholder="1º semestre">
+
+            <input class="Caixa" type="number" name="txt2semestre" size="8" placeholder="2º semestre">
+
+            <input class="Caixa" type="number" name="txt3semestre" size="8" placeholder="3º semestre">
+
+            <input class="Caixa" type="number" name="txt4semestre" size="8" placeholder="4º semestre">
+
+            <input class="Caixa" type="text" name="txtResultado" placeholder="Resultado">
+
+            <input class="Caixa" type="number" name="txtMedia" size="8" placeholder="Media">
+
+            <input type="button" value="Calcular" onclick="calcular()">
+
+            <input type="reset" value="Limpar" onclick="limpar()">
+        </form>
+    </div>
+    <!-- A tag script liga o documento ao JavaScript -->
+    <script src="calcmedia.js"></script>
+</body>
+</html>
