@@ -1,0 +1,82 @@
+/*
+    Folha de estilo - cartas
+    @author Luís Antônio de Paula Lima
+*/
+
+/* Layout */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dddddd;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Carta */
+
+.Carta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative; /* referencia a alinhamento */
+    margin-bottom: 50px;
+}
+
+.Canto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+}
+
+#supEsq {
+    top: 25px;
+    left: 15px;
+    text-align: left;
+}
+
+#infDir {
+    bottom: 25px;
+    right: 15px;
+    text-align: right;
+    transform: rotate(180deg); /* Girar em 180° graus */
+}
+
+.Face {
+    font-size: 3.5em;
+}
+
+/* Botão */
+
+button {
+    padding: 7px 14px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
