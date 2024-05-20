@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Média</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <h1>Calcular o gasto de Combustivel por KM rodado</h1>
+        <img src="./img/icon.png" width="170px" height="170px">
+        <form name="frmFlex">
+            <h2 style="font-size: 1.2em;">Preço do Combustivel.</h2>
+            <input class="Caixa" type="number" name="txtCombustivel" placeholder="Combustivel">
+            <h2 style="font-size: 1.2em;">Quantos Kilometros roda o carro por litro.</h2>
+            <input class="Caixa" type="number" name="txtKm" placeholder="Kilometragem">
+            <h2 style="font-size: 1.2em;">Veja o resultado abaixo clicando no botao (Calcular)</h2>
+            <p><input class="Caixa2" type="text" name="txtResultado" placeholder="Resultado" disabled></p>
+
+            <input class="Botao" type="button" value="Calcular" onclick="calcular()">
+
+            <input class="Botao" type="reset" value="Limpar" onclick="limpar()">
+        </form>
+    </div>
+    <!-- A tag script liga o documento ao JavaScript -->
+    <script src="valorkmrodado.js"></script>
+</body>
+</html>

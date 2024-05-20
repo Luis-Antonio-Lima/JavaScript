@@ -10,16 +10,19 @@ function calcular() {
     segundo = Number(frmFlex.txt2semestre.value)
     terceiro = Number(frmFlex.txt3semestre.value)
     quarto = Number(frmFlex.txt4semestre.value)
+
     media = (primeiro + segundo + terceiro + quarto) / 4
+
+    frmFlex.txtMedia.value = media.toFixed(2)
 
     if (media >= 7) {
         frmFlex.txtResultado.value = "APROVADO"
-        frmFlex.txtMedia.value = media
-    } else if (media <= 4) {
+    } else if (media < 4) {
         frmFlex.txtResultado.value = "REPROVADO"
-        frmFlex.txtMedia.value = media
     } else  {
-        frmFlex.txtResultado.value = "RECUPERACAO"
-        frmFlex.txtMedia.value = media
+        frmFlex.txtResultado.value = "RECUPERAÇÃO"
     }
+}
+
+function limpar() {
 }

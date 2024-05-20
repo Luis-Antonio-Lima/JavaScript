@@ -110,4 +110,79 @@ function nome () {
     
 }
 
+Função com retorno:
+function nome () {
+    return
+}
+
+Funções anônimas:
+const nome = function() {
+
+}
+
+let nome = function() {
+  
+}
+
+Funções em JavaScript moderno podem ser simplificados
+
+obs:
+typeof //verifica a tipagem dinâmica
+primitivos (string, number e boolean)
+function
+object
+
 ################################  Aula 03  ################################
+
+POO - Programação Orientada a Objetos
+
+Pilares:
+- Abstração
+- Herança
+- Polimorfismo
+- Encapsulamento
+
+ATENÇÃO
+
+Toda a classe modelo inicia com uma letra maiúscula
+
+(IMPORTANTE!)
+new -> indica a criação de um objeto
+this -> quando se refere a ele mesmo
+super -> indica o uso de atributos da classe pai
+polimorfismo -> é a mudança de um comportamento ja existente
+encapsulamento (segurança)
+
+ATENÇÃO -> O polimorfismo não cria outro método, ele apenas modifica o comportamento de um método ja existente. Obrigatório usar o mesmo nome do método da classe pai
+
+Dica:
+class Classe {} //cria uma classe modelo
+- O nome da classe sempre deve começar com uma letra maiúscula
+- Classe (biologia)
+- objeto (new) (substantivo)
+- atributos (variáveis) (adjetivos)
+
+Encapsulamento
+1 - Proteger a variável criando um modificador privado (acesso exclusivo da classe ao qual pertence)
+2 - Criar uma função para obter o conteúdo da variável (get)
+3 - Criar uma função para gravar um dado na variável (set)
+
+No JavaScript usamos o _ antes da variável para encapsular
+
+################################  Aula 04  ################################
+
+No JavaScript objetos podem ser criados sem uma classe modelo
+Estruturas de dados usando objetos
+Exemplos:
+- package.json
+-coleção do banco de dados (MongoDB)
+
+ATENÇÃO
+Tipos no JavaScript
+- string
+- number
+- boolean
+- function
+- object
+
+################################  Aula 05  ################################

@@ -35,8 +35,15 @@ input {
 }
 
 .Caixa2 {
-    width: 70%;
+    width: 35%;
     border: 1px solid aqua;
+    padding: 5px;
+    background-color: white;
+}
+
+.Botao {
+    width: 35%;
+    border: 1px solid black;
     padding: 5px;
     background-color: white;
 }
