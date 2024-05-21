@@ -56,13 +56,13 @@ body {
 
 #supEsq {
     top: 25px;
-    left: 15px;
+    left: 0px;
     text-align: left;
 }
 
 #infDir {
     bottom: 25px;
-    right: 15px;
+    right: 0px;
     text-align: right;
     transform: rotate(180deg); /* Girar em 180° graus */
 }
