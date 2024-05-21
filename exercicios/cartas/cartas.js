@@ -31,12 +31,13 @@ function sortearCarta() {
     document.getElementById('centro').innerHTML = `<div>${nipe}</div>`
     document.getElementById('infDir').innerHTML = `<div>${face}</div><div>${nipe}</div>`
 
+    // Adicionando imagens caso apareça K,Q e J
     if (face === 'K') {
-        
+        document.getElementById('centro').innerHTML = `<img src="./img/rei.png">`
     } else if (face === 'Q') {
-
+        document.getElementById('centro').innerHTML = `<img src="./img/dama.png">`
     } else if (face === 'J') {
-
+        document.getElementById('centro').innerHTML = `<img src="./img/valete.png">`
     }
 
     // Aplicar a cor
