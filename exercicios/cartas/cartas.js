@@ -45,5 +45,3 @@ function sortearCarta() {
     document.getElementById('centro').style.color = cor /* Adicionar CSS */
     document.getElementById('infDir').style.color = cor /* Adicionar CSS */
 }
-
-//teste
