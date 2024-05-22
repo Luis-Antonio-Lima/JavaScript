@@ -186,3 +186,30 @@ Tipos no JavaScript
 - object
 
 ################################  Aula 05  ################################
+
+Array (vetor)
+Array multidimensional (matriz)
+- É uma forma especial de trabalhar com variáveis
+- Indice [0] [1]
+- Na linguagem JS array é um objeto
+
+ATENÇÃO
+Cuidado ao manipular os dados e alterar o indice do array
+Mais seguro:
+push() - Método usado para adicionar ao final do array
+pop() - excluir o ultimo registro
+delete - excluir um dado sem alterar o indice
+
+Percorrendo um array
+1 - for ou forEach
+2 - map() //percorre o array, faz algo e gera outro array com o resultado
+
+Um array também pode ser criado como um objeto
+
+let nome = []
+let nome = new Array()
+
+Um array pode ser criado como uma estrutura de dados, junto com objetos e podem ser usados filtros para manipulação de dados
+
+ATENÇÃO
+Sempre criar uma cópia do array original (para exiição) antes de filtrar os dados
