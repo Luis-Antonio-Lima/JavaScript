@@ -1,0 +1,28 @@
+/**
+    Folha de estilo slide show
+    @author Luís Antônio de Paula Lima
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.Container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* Efeito fade */
+#slide.FadeOut {
+    opacity: 0.1;
+}
+
+#slide {
+    transition: opacity 1.5s;
+    opacity: 1;
+}
