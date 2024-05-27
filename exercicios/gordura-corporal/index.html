@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="bodyFatForm">
+        <label for="gender">Gênero:</label><br>
+        <select id="gender" name="gender" onchange="toggleHipInput()">
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+        </select><br>
+        <label for="age">Idade:</label><br>
+        <input type="number" id="age" name="age"><br>
+        <label for="height">Altura (em pés):</label><br>
+        <input type="number" id="height" name="height"><br>
+        <label for="neck">Pescoço (em pés):</label><br>
+        <input type="number" id="neck" name="neck"><br>
+        <label for="waist">Cintura (em pés):</label><br>
+        <input type="number" id="waist" name="waist"><br>
+        <label for="hip" class="hide">Quadril (em pés):</label><br>
+        <input type="number" id="hip" name="hip" class="hide"><br>
+        <input type="button" value="Calcular" onclick="calculateBodyFat()">
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function toggleHipInput() {
+            let gender = document.getElementById('gender').value;
+            let hipLabel = document.querySelector('label[for="hip"]');
+            let hipInput = document.getElementById('hip');
+
+            if (gender === 'female') {
+                hipLabel.classList.remove('hide');
+                hipInput.classList.remove('hide');
+            } else {
+                hipLabel.classList.add('hide');
+                hipInput.classList.add('hide');
+            }
+        }
+
+        function calculateBodyFat() {
+            let gender = document.getElementById('gender').value;
+            let age = document.getElementById('age').value;
+            let height = document.getElementById('height').value
+            let neck = document.getElementById('neck').value
+            let waist = document.getElementById('waist').value
+            let hip = document.getElementById('hip').value
+
+            let bodyFat;
+            if (gender === 'male') {
+                bodyFat = 495 / (1.0324 - 0.19077 * Math.log10(waist - neck) + 0.15456 * Math.log10(height)) - 450
+            } else {
+                bodyFat = 1.20 * (waist + hip - neck) / height + 0.23 * age - 5.4;
+            }
+
+            document.getElementById('result').innerText = 'Gordura corporal: ' + bodyFat.toFixed(2) + '%';
+        }
+    </script>
+</body>
+</html>

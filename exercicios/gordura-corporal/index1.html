@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gordura Corporal</title>
+    <link rel="stylesheet" href="style.css">>
+</head>
+<body>
+    <form id="bodyFatForm">
+        <label for="gender">Gênero:</label>
+        <select id="gender" onchange="toggleHipInput()">
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+        </select>
+        <label for="age">Idade:</label>
+        <input type="number" id="age">
+        <label for="height">Altura (cm):</label>
+        <input type="number" id="height">
+        <label for="neck">Pescoço (cm):</label>
+        <input type="number" id="neck">
+        <label for="waist">Cintura (cm):</label>
+        <input type="number" id="waist">
+        <label for="hip" id="hipLabel">Quadril (cm):</label>
+        <input type="number" id="hip">
+        <div class="botao">
+            <button type="button" onclick="calculateBodyFat()">Calcular</button>
+            <button type="button" onclick="clearForm()">Limpar</button>
+        </div>
+    </form>
+    <div id="result"></div>
+    <script src="GorduraCalc.js"></script>
+</body>
+</html>

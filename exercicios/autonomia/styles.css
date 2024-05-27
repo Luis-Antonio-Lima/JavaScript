@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.box {
+    border: 1px solid black; /* Adiciona uma borda em torno da caixa */
+    padding: 20px; /* Adiciona um preenchimento dentro da caixa */
+    margin-bottom: 20px; /* Adiciona uma margem abaixo da caixa */
+}
+
+#calcular {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#limpar {
+    background-color: #f44336;
+    color: white;
+}
