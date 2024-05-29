@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="stylesheet" href="style.css">
+  <title>BFP - Calculator</title>
+</head>
+
+<body>
+<div id=outer><b>Body Fat Percentage Calculator</b>
+<div id=cover>
+  <form name=fp>
+    <table class=main>
+      <col class=w60>
+      <col class=w40>
+      <tr>
+        <td>Measuring System<td>
+          <select id=msf onchange=msystem();>
+            <option value=metric>Metric (Kgs, Cms)<option value=us>US (lbs, inches)
+          </select>
+      <tr>
+        <td>Sex<td>
+          <select id=sf>
+            <option value=m>Male</option>
+            <option value=f>Female</option>
+          </select>
+      <tr>
+        <td>Height <span id=thf>(Cms)</span><td>
+            <input id=hf>
+      <tr>
+        <td>Neck Girth<span id=tneck> (Cms)</span><td>
+          <input id=neck>
+      <tr>
+        <td>Waist <span id=twaist>(Cms)</span><td>
+            <input id=waist>
+      <tr>
+        <td>Hips <span id=thips>(Cms)</span><td>
+              <input id=hips>
+      <tr>
+        <td><button type=reset>Reset</button>
+        <td><button type=button onclick='bfat();'>Submit</button>
+      <tr>
+        <td>Your Body Fat<td>
+          <input id=bf class=op>
+      <tr>
+        <td>Body Fat Category<td>
+          <input id=nbf class=op>
+      <tr>
+        <td colspan=2 class=ac>Calculations are as per Universal Formula</table>
+        </form>
+      </div>
+    </div>
+
+<script type="text/javascript" src="CalcularGordura.js"></script>
+
+ </body>
+</html>

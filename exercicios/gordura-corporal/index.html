@@ -30,16 +30,16 @@
 
     <script>
         function toggleHipInput() {
-            let gender = document.getElementById('gender').value;
-            let hipLabel = document.querySelector('label[for="hip"]');
-            let hipInput = document.getElementById('hip');
+            let gender = document.getElementById('gender').value
+            let hipLabel = document.querySelector('label[for="hip"]')
+            let hipInput = document.getElementById('hip')
 
             if (gender === 'female') {
-                hipLabel.classList.remove('hide');
-                hipInput.classList.remove('hide');
+                hipLabel.classList.remove('hide')
+                hipInput.classList.remove('hide')
             } else {
-                hipLabel.classList.add('hide');
-                hipInput.classList.add('hide');
+                hipLabel.classList.add('hide')
+                hipInput.classList.add('hide')
             }
         }
 
@@ -54,8 +54,8 @@
             let bodyFat;
             if (gender === 'male') {
                 bodyFat = 495 / (1.0324 - 0.19077 * Math.log10(waist - neck) + 0.15456 * Math.log10(height)) - 450
-            } else {
-                bodyFat = 1.20 * (waist + hip - neck) / height + 0.23 * age - 5.4;
+            } else if (gender === 'female') {
+                bodyFat = (495 / (1.29579 - 0.35004 * Math.log10(waist + hip - neck) + 0.22100 * Math.log10(height))) - 450
             }
 
             document.getElementById('result').innerText = 'Gordura corporal: ' + bodyFat.toFixed(2) + '%';

@@ -1,6 +1,7 @@
 /* Adicione seu CSS aqui */
 body {
     font-family: Arial, sans-serif;
+    background-color: rgb(233, 233, 233);
 }
 
 form {
@@ -10,13 +11,8 @@ form {
 
 label, input, select {
     display: flex;
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
-}
-
-.botao {
-    display: flex;
-    justify-content: space-between;
 }
 
 #result {
@@ -24,8 +20,28 @@ label, input, select {
     justify-content: center;
 }
 
+#result1 {
+    align-items: center;
+    justify-content: center;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.671);
+}
+
+hr {
+    width: 100%;
+}
+
 button {
-    width: 49%;
+    width: 274px;
+    margin: 0px 10px;
 }
 
 @media (max-width: 600px) {
