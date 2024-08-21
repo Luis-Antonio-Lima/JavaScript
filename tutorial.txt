@@ -265,3 +265,8 @@ try {
 
 dica:
 \n (quebrar linha) 'não é exibido'
+
+--------------------------------------------------------------------------------
+
+Gerando um documentopdf no JavaScript
+npm i jspdf
